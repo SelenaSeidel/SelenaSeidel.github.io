@@ -2,7 +2,7 @@ body{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;  ;
     background-image:url(estrellasfondo.jpg);
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     text-align: center;
 }
 
@@ -92,4 +92,72 @@ div.gallery {
     width: 100%;
     height: auto;
   }
+
+
+/*para verlo bien en celular y tablet*/
+@media (max-width: 790px){
+    body{
+        overflow-x: hidden;
+    }
+    h2{
+      font-size: 7vw;
+    }
+    p.titulos{
+        font-size: 5vw;
+    }
+    #nombre{
+        font-size: 8vw;
+        padding: 5%;
+    }
+    #inicio{
+        padding: 3%;
+        width: 70vw;
+    }
+    .sobremi{
+        text-indent: 3vw;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        font-size: 4vw;
+        text-align: center;
+        width: 70vw; 
+        
+    }
+    .presentacion{
+        font-size: 4vw;
+        text-align: center;
+    }
+   
+   .opciones{
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+   .opcion{
+    margin: auto;
+    margin-top: 2vh;
+   }
+   .imagen{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 100%;
+    }
+
+    #yo{
+        float:none;
+        margin: auto;
+        margin-top: -3%;
+        
+    }
+    .centrar{
+        text-align: center;
+    }
+
+    div.gallery {
+     float: none;
+     margin: auto;
+     margin-bottom: 2vh;
+    }
+}
 
